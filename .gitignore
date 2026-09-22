@@ -1,0 +1,70 @@
+# ---- Ambiente virtual ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Testes / cobertura / cache de ferramentas ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+# Descomente se nao quiser versionar a saida dos notebooks
+# (exige limpar as saidas antes de commitar)
+# *.ipynb
+
+# ---- Editores / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Claude Code ----
+# settings.json (compartilhado) fica versionado; o local, nao
+.claude/settings.local.json
+
+# ---- Windows / OS ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# ---- Segredos / config local ----
+.env
+.env.*
+!.env.example
+*.local.json
+segredos.py
+config_local.py
+
+# ---- Saidas do bot (screenshots, logs, debug) ----
+# As imagens em images/ e botao_800.png SAO dados essenciais:
+# o script faz glob em images/*.png. Nao ignore .png de forma geral.
+logs/
+*.log
+debug/
+screenshots/
+capturas/
+temp/
+tmp/
